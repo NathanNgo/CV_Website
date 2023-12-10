@@ -24,7 +24,6 @@
   scrollbar-gutter: stable;
 }
 
-
 .outerContainer {
   display: table;
   position: absolute;
@@ -42,21 +41,18 @@
 }
 
 .page {
-  background-color: #f2f2f2;
+  background-color: #ebebeb;
   margin-left: auto;
   margin-right: auto;
   width: 21cm;
   height: 29.7cm;
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 0 0 0.6cm rgba(0, 0, 0, 0.6);
 }
 
 .pageContent {
   font-family: 'Hanken Grotesk', sans-serif;
-}
-
-.pageContent > h1 {
-  margin: 0;
+  height: 100%;
 }
 
 div::-webkit-scrollbar {
