@@ -78,6 +78,14 @@ function PageContent() {
                     </ul>
                     <hr />
                 </section>
+                <section className={styles.mainSubsection}>
+                    <h3>TECHNOLOGIES</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Other Stuff</li>
+                    </ul>
+                    <hr />
+                </section>
             </section>
         </div>
     )
