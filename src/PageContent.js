@@ -17,7 +17,7 @@ function PageContent() {
                     <p>nathanj238@gmail.com</p>
                     <p><b>LinkedIn</b></p>
                     <p>How about no?</p>
-                    <p><b>Github</b></p>
+                    <p><b>GitHub</b></p>
                     <p>https://github.com/NathanNgo</p>
                     <hr />
                 </section>
