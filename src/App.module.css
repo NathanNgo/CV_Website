@@ -19,7 +19,7 @@
   padding: 0;
   position: fixed;
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: auto;
 
   scrollbar-gutter: stable;
 }
@@ -30,8 +30,8 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 100%;
-  margin-left: 9px;
+  width: calc(100% - 18px);
+  margin-left: 18px;
 }
 
 .innerContainer {
