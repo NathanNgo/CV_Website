@@ -1,4 +1,5 @@
 import styles from "./PageContent.module.css"
+import phil from "./ad1.png"
 
 function PageContent() {
     return (
@@ -84,6 +85,10 @@ function PageContent() {
                         <li>Python</li>
                         <li>Other Stuff</li>
                     </ul>
+                    <hr />
+                </section>
+                <section className={styles.mainSubsection}>
+                    <img src={phil} alt="phil" className={styles.phil}/>
                     <hr />
                 </section>
             </section>

@@ -108,3 +108,10 @@ section.mainSubsection > ul {
   font-size: 15px;
   font-weight: 300;
 }
+
+.phil {
+  height: 90px;
+  width: 430px;
+  margin: 15px 0 0 7px;
+  padding: 0;
+}
