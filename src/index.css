@@ -1,10 +1,195 @@
 code {
-  font-family: 'Hankgen Grotesk', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Hankgen Grotesk';
   /*font-family: 'Hanken Grotesk', sans-serif;*/
 }
 
 body {
   margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-image: linear-gradient(
+    45deg,
+    hsl(193deg 65% 16%) 0%,
+    hsl(190deg 59% 20%) 11%,
+    hsl(186deg 53% 24%) 22%,
+    hsl(183deg 46% 28%) 33%,
+    hsl(178deg 39% 33%) 44%,
+    hsl(172deg 34% 39%) 56%,
+    hsl(165deg 29% 45%) 67%,
+    hsl(157deg 26% 52%) 78%,
+    hsl(147deg 29% 59%) 89%,
+    hsl(133deg 32% 66%) 100%
+  );
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: auto;
+
+  scrollbar-gutter: stable;
+}
+
+.outerContainer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: calc(100% - 18px);
+  margin-left: 18px;
+}
+
+.innerContainer {
+  padding: 50px 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.page {
+  background-color: #ebebeb;
+  margin-left: auto;
+  margin-right: auto;
+  width: 21cm;
+  height: 29.7cm;
+  border-radius: 3px;
+  box-shadow: 0 0 0.6cm rgba(0, 0, 0, 0.6);
+}
+
+.pageContent {
+  font-family: 'Hanken Grotesk', sans-serif;
+  height: 100%;
+}
+
+div::-webkit-scrollbar {
+  width: 18px;
+}
+ 
+div::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 999px;
+  background-clip: padding-box;
+  border: 6px solid rgba(0, 0, 0, 0);
+}
+
+h1 {
+  margin: -20px 0 -2px 0;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+h2 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+h3 {
+  text-align: center;
+  margin: 14px 0 10px 0;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+header {
+  justify-content: center;
+  grid-area: header;
+  border-radius: 5px 5px 0 0;
+  min-height: 100%;
+
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: black;
+  margin: 20px 0 0 0;
+}
+  
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+
+  grid-template-areas:
+  "header header header"
+  "side main main"
+  "side main main";
+  height: 100%;
+  padding: 40px;
+}
+
+span.firstName {
+  font-weight: 400;
+}
+
+section.secondaryInfo {
+  border-right: 2px solid black;
+  grid-area: side;
+  height: calc(100% - 80px);
+  padding: 0 15px;
+}
+
+section.secondarySubsection > hr {
+  border: none;
+  background: none;
+  border-bottom: 2px dashed black;
+  margin: auto;
+  margin-top: 10px;
+}
+
+section.secondarySubsection > ul {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.date {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+section.mainInfo {
+  grid-area: main;
+  height: calc(100% - 80px);
+  padding: 0 15px;
+}
+
+section.mainSubsection > hr {
+  border: none;
+  background: none;
+  border-bottom: 2px dashed black;
+  margin: auto;
+  margin-top: 10px;
+}
+
+section.mainSubsection > ul {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.phil {
+  height: 90px;
+  width: 430px;
+  margin: 15px 0 0 7px;
   padding: 0;
 }
