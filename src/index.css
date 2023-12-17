@@ -123,8 +123,9 @@ hr {
 }
   
 .grid {
+  box-sizing: border-box;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) 1fr 1fr;
   grid-template-rows: auto 1fr 1fr;
 
   grid-template-areas:
@@ -142,7 +143,7 @@ span.firstName {
 section.secondaryInfo {
   border-right: 2px solid black;
   grid-area: side;
-  height: calc(100% - 80px);
+  height: calc(100% - 40px);
   padding: 0 15px;
 }
 
@@ -156,13 +157,14 @@ section.secondarySubsection > hr {
 
 section.secondarySubsection > ul {
   margin: 0;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 300;
+  /* font-size: 13px; */
 }
 
 .date {
   margin: 0;
-  padding: 0;
+  padding: 2px;
   font-size: 12px;
   font-weight: 300;
 }
@@ -187,9 +189,30 @@ section.mainSubsection > ul {
   font-weight: 300;
 }
 
-.phil {
-  height: 90px;
-  width: 430px;
-  margin: 15px 0 0 7px;
+.technologies {
+  font-size: 15px;
+  font-weight: 300;
+  width: 100%;
+}
+
+.item {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+p.nameAndDate {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+p.projectTitle {
+  margin-bottom: 5px;
+}
+
+a {
+  margin: 0;
   padding: 0;
+  font-size: 15px;
+  font-weight: 300;
 }
